@@ -6,11 +6,11 @@ let routes: any[] = []
 routes = routes.concat(
   landingPageRouter,
   /* place your routes module above this line */
-  // {
-  //   path: '*',
-  //   name: '404-not-found',
-  //   component: () => import('404_route')
-  // }
+  {
+    path: '/:catchAll(.*)',
+    name: '404-not-found',
+    component: () => import('@/views/errors/404_.vue')
+  }
 )
 
 const router = createRouter({
