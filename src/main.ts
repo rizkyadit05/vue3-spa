@@ -7,7 +7,7 @@ import App from './App.vue'
 import router from './router'
 
 /** style */
-import 'bootstrap/dist/css/bootstrap-grid.min.css'
+import 'bootstrap/dist/css/bootstrap.min.css'
 
 const app = createApp(App)
 
